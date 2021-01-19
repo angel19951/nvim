@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =6
+let g:netrw_dirhist_6='/home/vagrant'
+let g:netrw_dirhist_5='/home/vagrant/holberton-projects/simple_shell/Gustav_Shell'
+let g:netrw_dirhist_4='/home/vagrant/holberton-projects/simple_shell'
+let g:netrw_dirhist_3='/home/vagrant/holberton-projects'
+let g:netrw_dirhist_2='/home/vagrant/holberton-projects/simple_shell'
+let g:netrw_dirhist_1='/home/vagrant/holberton-projects/simple_shell/SHELL'
