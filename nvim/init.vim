@@ -65,6 +65,11 @@ source $HOME/.config/nvim/vim-plug/plugins.vim
 set t_Co=256
 set background=dark
 
+"Setting nerd tree mapping
+nnoremap <F4> :NERDTreeToggle<CR>
+nnoremap <F5> :NERDTree<CR>
+"Colors!!!
 let g:solarized_termcolors=256
 let g:solorized_termtrans=1
+let g:rainbow_active = 1
 colorscheme solorized

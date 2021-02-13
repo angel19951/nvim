@@ -14,5 +14,14 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'scrooloose/NERDTree'
     " Auto pairs for '(' '[' '{'
     Plug 'jiangmiao/auto-pairs'
-
-call plug#end()
+    " Rainbow Brackets (), []. {}
+    Plug 'luochen1990/rainbow'
+    "Adding git branch checks on the actual code
+    Plug 'airblade/vim-gitgutter'
+    "Adding vim-test for test cases"
+    Plug 'vim-test/vim-test'
+    "Adding super tab"
+    Plug 'ervandew/supertab'
+    "Lights up current line"
+    Plug 'itchyny/lightline.vim'
+    call plug#end()
