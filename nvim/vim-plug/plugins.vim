@@ -18,10 +18,12 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'luochen1990/rainbow'
     "Adding git branch checks on the actual code
     Plug 'airblade/vim-gitgutter'
-    "Adding vim-test for test cases"
+    "Adding vim-test for test cases
     Plug 'vim-test/vim-test'
-    "Adding super tab"
+    "Adding super tab
     Plug 'ervandew/supertab'
-    "Lights up current line"
+    "Lights up current line
     Plug 'itchyny/lightline.vim'
+    "Check syntax
+    Plug 'nvie/vim-flake8'
     call plug#end()

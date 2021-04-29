@@ -2,6 +2,7 @@
 "
 "Encoding 
 set encoding=utf-8
+set nocompatible
 
 "Forces plugins to load correctly
 filetype off
@@ -23,6 +24,13 @@ au BufRead,BufNewFile *.py set expandtab
 au BufRead,BufNewFile *.c set noexpandtab
 au BufRead,BufNewFile *.h set noexpandtab
 au BufRead,BufNewFile Makefile* set noexpandtab
+
+"Config for tabs for JS and PHP
+augroup FileTypeSpecificAutocommands
+    autocmd FileType javascript setlocal tabstop=2 softtabstop=2 shiftwidth=2
+    autocmd FileType php setlocal tabstop=2 softtabstop=2 shiftwidth=2
+augroup END
+
 "Tab and indent setup
 set nowrap
 set smarttab
@@ -72,4 +80,8 @@ nnoremap <F5> :NERDTree<CR>
 let g:solarized_termcolors=256
 let g:solorized_termtrans=1
 let g:rainbow_active = 1
+
+"Syntax
+autocmd FileType python map <buffer><F7>:call flake8#Flake8()<CR>
+
 colorscheme solorized
